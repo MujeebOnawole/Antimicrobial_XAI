@@ -46,7 +46,7 @@ class Configuration:
         # -----------------------------
         # 1. Task Configuration
         # -----------------------------
-        self.task_name = 'combined_Sa'#'name of your input csv file without the extension' # Name of the task ('combined_Sa' -S-aureus , 'C_albicans' and 'E_coli')
+        self.task_name = 'combined_Sa'#'name of your input csv file without the extension' # Name of the task ('combined_Sa',-SA; 'C_albicans'-CA and 'E_coli_model_data'-EC)
         self.classification = True # Set to True for classification tasks or False for regression tasks
         self.task_type = 'classification' if self.classification else 'regression'
         self.labels_name = 'TARGET' if self.classification else 'logMIC' 
@@ -1238,4 +1238,5 @@ if __name__ == '__main__':
     config = Configuration()
 else:
     config = get_config()
+
 
